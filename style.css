@@ -54,12 +54,13 @@ body {
   position: absolute;
   bottom: 0%;
   background: rgba(0, 0, 0, 0.5);
-  transform: translateZ(20px) scaleY(0);
+  transform: translateZ(20px);
   padding: 40px 25px;
   transform-origin: bottom;
   transition: 0.5s;
   color: #898989;
   transform-style: preserve-3d;
+  z-index: 100;
 }
 
 .container .box .content-box h2 {
