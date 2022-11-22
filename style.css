@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px 0;
+  transform-style: preserve-3d;
+}
+
+.img-box > img {
+  width: 100%;
+  height: 100%;
+}
+
+.container .box {
+  position: relative;
+  width: 600px;
+  height: 500px;
+  margin: 60px 0;
+  background: #000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transform-style: preserve-3d;
+}
+
+.container .box:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.container .box .img-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.container .box .content-box {
+  position: absolute;
+  bottom: 0%;
+  background: rgba(0, 0, 0, 0.5);
+  transform: translateZ(20px) scaleY(0);
+  padding: 40px 25px;
+  transform-origin: bottom;
+  transition: 0.5s;
+  color: #898989;
+  transform-style: preserve-3d;
+}
+
+.container .box .content-box h2 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.container .box:hover .content-box {
+  transform: translateZ(20px) slaceY(1);
+}
+
+
